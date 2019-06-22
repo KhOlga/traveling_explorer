@@ -1,0 +1,33 @@
+{% block body %}
+<div class="container">
+    <!-- The Modal -->
+    <div class="modal" id="getSupport">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h1 class="modal-title">Modal Heading</h1>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="col-lg-6 wow fadeInUp delay-06s">
+                    <form action="#" method="post"class="form">
+                        <input class="input-text animated wow flipInY delay-02s" type="text" name="name" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                        <input class="input-text animated wow flipInY delay-04s" type="email" name="email" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                        <input class="input-text animated wow flipInY delay-04s" type="text" name="phone" value="Your Phone *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                        <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+                        <input class="input-btn animated wow flipInY delay-08s" type="submit" value="Get support">
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

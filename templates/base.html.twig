@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Explorer: Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
+            {#<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css">#}{#
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>#}
+
+            <link rel="stylesheet" href="{{ asset('css/animate.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/animation.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/animation_timers.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/bootstrap-reboot.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/linecons.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" type="text/css">
+            <link rel="stylesheet" href="{{ asset('css/sponsors_twitter.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/team.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/contacts.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/customers_reviews.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/hot_tours.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/our_company.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/modals.css') }}">
+
+
+
+            <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+        {% endblock %}
+
+    </head>
+    <body>
+        <header id="header_section" class="container-fluid">
+            <div class="row">
+                <div class="col-12 header">
+                    <nav class="row nav" id="nav">
+                    {#<nav class="nav navbar navbar-expand-sm bg-light navbar-light fixed-top" id="nav">#}
+                        <a class="col-xl-2 logo navbar-brand" href="javascript:void(0)">
+                            <img src="{{ asset('img/logob.png') }}" alt="logo" style="width:230px;">
+                        </a>
+                        <ul class="col-xl-10 navbar-nav toggle">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/our_company">Our company</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/hot_tours">Hot tours</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/customers_reviews">Customers reviews</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/our_team">Our team</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contacts">Contact</a></li>
+                        </ul>
+                        <ul class="">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/our_company">Our company</a></li>
+                            <li><a href="/hot_tours">Hot tours</a></li>
+                            <li><a href="/customers_reviews">Customers reviews</a></li>
+                            <li><a href="/our_team">Our team</a></li>
+                            <li><a href="/contacts">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa-bars"></i></a>
+                    </div>
+                </div>
+                {# Start color-accent#}
+                <div class="col-xl-12 color-accent"></div>
+                {# End color-accent#}
+            </div>
+        </header>
+    <section>
+
+    </section>
+
+
+
+
+
+
+
+
+    {% block body %}
+
+    {% endblock %}
+
+
+    {% block javascripts %}
+        <script type="text/javascript" src="{{ asset('js/jquery.1.8.3.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery-scrolltofixed.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.isotope.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/wow.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/classie.js') }}"></script>
+        <script type="text/javascript">
+            $(document).ready(function(e) {
+                $('.res-nav_click').click(function(){
+                    $('ul.toggle').slideToggle(600)
+                });
+
+                $(document).ready(function() {
+                    $(window).bind('scroll', function() {
+                        if ($(window).scrollTop() > 0) {
+                            $('#header_section').addClass('fixed');
+                        }
+                        else {
+                            $('#header_section').removeClass('fixed');
+                        }
+                    });
+
+                });
+
+
+            });
+            function resizeText() {
+                let preferredWidth = 767;
+                let displayWidth = window.innerWidth;
+                let percentage = displayWidth / preferredWidth;
+                let fontsizetitle = 25;
+                let newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+                $(".divclass").css("font-size", newFontSizeTitle)
+            }
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(e) {
+                $('#header_section').scrollToFixed();
+                $('.res-nav_click').click(function(){
+                    $('.main-nav').slideToggle();
+                    return false
+
+                });
+
+            });
+        </script>
+        <script>
+            wow = new WOW(
+                {
+                    animateClass: 'animated',
+                    offset:       100
+                }
+            );
+            wow.init();
+            document.getElementById('').onclick = function() {
+                let section = document.createElement('section');
+                section.className = 'wow fadeInDown';
+                section.className = 'wow shake';
+                section.className = 'wow zoomIn';
+                section.className = 'wow lightSpeedIn';
+                this.parentNode.insertBefore(section, this);
+            };
+        </script>
+
+        <script type="text/javascript">
+            $(window).load(function(){
+
+                $('a').bind('click',function(event){
+                    let $anchor = $(this);
+
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top - 91
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            })
+        </script>
+
+        <script>
+            filterSelection("all") // Execute the function and show all columns
+            function filterSelection(c) {
+                let x, i;
+                x = document.getElementsByClassName("column");
+                if (c == "all") c = "";
+                // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+                let i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                        element.className += " " + arr2[i];
+                    }
+                }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+                let i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            let btnContainer = document.getElementById("myBtnContainer");
+            let btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function(){
+                    let current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+
+    {% endblock %}
+
+    </body>
+</html>

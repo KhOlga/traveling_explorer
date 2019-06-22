@@ -1,0 +1,62 @@
+/*========== HOMEPAGE STYLES start ==========*/
+
+.homepage_content_outer{
+    background:#f9f9f9;
+    position:relative;
+}
+
+.homepage_content_inner{
+    position:relative;
+    height: 600px;
+}
+
+.homepage_content{
+    background:url(../img/journey.jpg) no-repeat right center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    /*margin-bottom: 0px;*/
+
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(5%, -20%);
+
+}
+
+.homepage_left_content h2{
+
+    color:#111111;
+    line-height: 52px;
+    text-align:left;
+    font-weight:700;
+}
+
+.homepage_left_content h4{
+    font-size:16px;
+    color:#00c6c6;
+    text-align:left;
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.homepage_left_content p{
+    font-family:'Lato', sans-serif;
+    font-size:16px;
+    color:#888888;
+    margin:0 0 30px 0;
+    line-height: 26px;
+
+}
+
+.learn_more{
+    background:#00c6c6;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    margin-top: 35px !important;
+}
+
+a.learn_more{
+    background:#00c6c6;
+}

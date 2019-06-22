@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Sponsors
+---------------------------------*/
+
+
+.c-logo-part{
+	background: url(../img/poligan_bg.jpg) no-repeat left top;
+	padding: 20px 0;
+	margin-top: 20px;
+    filter: alpha(opacity=60);
+}
+.c-logo-part ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+}
+.c-logo-part ul li{
+	display:inline;
+	margin:0 25px;
+}
+.c-logo-part ul a{
+	display:inline-block;
+	margin: 0 20px;
+}
+
+/* Twitter Feed
+---------------------------------*/
+
+/*
+.business-talking{
+	background:#00b8ff;
+	padding:40px 0;
+	text-align:center;
+}
+
+.business-talking p{
+	font-size:16px;
+	color:#ffffff;
+	margin:0 0 15px 0;
+	}
+
+.twitter_bird{
+	background:url(../img/twitter_bird.png) no-repeat left top;
+	width:36px;
+	margin:0px auto 15px;
+	}
+
+.business-talking p small{
+	font-size:16px;
+	color:#ffffff;
+	display:inline-block;
+	}
+
+.business-talking span{
+	display:block;
+	font-size:14px;
+	color:#ffffff;
+	}
+*/
+
+.twitter-feed{
+	background:#00b8ff;
+	padding:40px 0;
+	text-align:center;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+.twitter-feed:hover {
+	background: #c15333;
+}
+
+.twitter-feed p{
+	font-size:16px;
+	font-weight: 300;
+	color:#ffffff;
+	margin:0 0 15px 0;
+	}
+	
+.twitter_bird{
+	/*background:url(../img/twitter_bird.png) no-repeat left top;*/
+	width:36px;
+	margin:0px auto 15px;
+	}
+	
+.twitter-feed p small{
+	font-size:16px;
+	font-weight: 300;
+	color:#ffffff;
+	display:inline-block;
+	}
+	
+.twitter-feed span{
+	display:block;
+	font-size:14px;
+	font-style: italic;
+	color:#ffffff;
+	}
+
+.twitter-feed span i{
+	font-size: 38px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Explorer: Hot tours{% endblock %}
+
+{% block body %}
+
+    <section id="hot-tours-section" class="content site-content">
+        <h2>Hot tours</h2>
+        <div class="hot-tours">
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('europe')"> Europa</button>
+                <button class="btn" onclick="filterSelection('ocean')"> Ocean</button>
+                <button class="btn" onclick="filterSelection('asia')"> Asia</button>
+                <button class="btn" onclick="filterSelection('castle')"> Castle</button>
+                <button class="btn" onclick="filterSelection('beach')"> Beach</button>
+            </div>
+            <div class="isotope" style="position: relative; overflow: hidden; height: auto;" id="hot-tours-wrap">
+                <!-- Gallery Grid -->
+                <div class="row">
+                    <div class="column hot-tours-item hot-tours-new-style one-four isotope-item europe castle">
+                        <div class="content">
+                            <div class="hot-tours-image"> <img src="img/hot-tours_pic1.jpg" alt="Vienna" > </div>
+                            <a title="Austria" >
+                                <div class="project-overlay">
+                                    <div class="project-info">
+                                        <div class="zoom-icon"></div>
+                                        <h4 class="project-name">Austria</h4>
+                                        <p class="project-categories">Europe, Castle</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column hot-tours-item hot-tours-new-style one-four isotope-item europe ocean beach">
+                        <div class="content">
+                            <div class="hot-tours-image"> <img src="img/hot-tours_pic2.jpg" alt="Sunny beach"> </div>
+                            <div class="project-overlay">
+                                <div class="open-project-link">
+                                    <a class="open-project" title="Spain"></a>
+                                </div>
+                                <div class="project-info">
+                                    <div class="zoom-icon"></div>
+                                    <h4 class="project-name">Spain</h4>
+                                    <p class="project-categories">Europe, Ocean, Beach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hot-tours-item hot-tours-new-style one-four isotope-item europe beach">
+                        <div class="content">
+                            <div class="hot-tours-image"> <img src="img/hot-tours_pic3.jpg" alt="Night town"> </div>
+                            <div class="project-overlay">
+                                <div class="open-project-link"> <a class="open-project" title="Open Project"></a> </div>
+                                <div class="project-info">
+                                    <div class="zoom-icon"></div>
+                                    <h4 class="project-name">Italy</h4>
+                                    <p class="project-categories">Europe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hot-tours-item hot-tours-new-style one-four isotope-item asia ocean beach">
+                        <div class="content">
+                            <div class="hot-tours-image"> <img src="img/hot-tours_pic4.jpg" alt="Laguna"> </div>
+                            <div class="project-overlay">
+                                <div class="open-project-link"> <a class="open-project" title="Open Project"></a> </div>
+                                <div class="project-info">
+                                    <div class="zoom-icon"></div>
+                                    <h4 class="project-name">Thailand</h4>
+                                    <p class="project-categories">Asia, Ocean, Beach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column hot-tours-item hot-tours-new-style one-four isotope-item europe castle">
+                        <div class="content">
+                            <div class="hot-tours-image"> <img src="img/hot-tours_pic5.jpg" alt="Hohenschwangau"> </div>
+                            <div class="project-overlay">
+                                <div class="open-project-link"> <a class="open-project" title="Open Project"></a> </div>
+                                <div class="project-info">
+                                    <div class="zoom-icon"></div>
+                                    <h4 class="project-name">Germany</h4>
+                                    <p class="project-categories">Europe, Castle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hot-tours-item hot-tours-new-style one-four isotope-item asia ocean">
+                        <div class="content">
+                            <div class="hot-tours-image"> <img src="img/hot-tours_pic6.jpg" alt="Old town"> </div>
+                            <div class="project-overlay">
+                                <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-2.html" title="Open Project"></a> </div>
+                                <div class="project-info">
+                                    <div class="zoom-icon"></div>
+                                    <h4 class="project-name">Japan</h4>
+                                    <p class="project-categories">Asia, Ocean</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hot-tours-item hot-tours-new-style one-four isotope-item europe ocean beach">
+                        <div class="content">
+                            <div class="hot-tours-image"> <img src="img/hot-tours_pic7.jpg" alt="Algarve"></div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <div class="zoom-icon"></div>
+                                    <h4 class="project-name">Portuguese</h4>
+                                    <p class="project-categories">Ocean, Europe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hot-tours-item hot-tours-new-style one-four isotope-item europe castle">
+                        <div class="content">
+                            <div class="hot-tours-image"> <img src="img/hot-tours_pic8.jpg" alt="Castle"> </div>
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <div class="zoom-icon"></div>
+                                    <h4 class="project-name">England</h4>
+                                    <p class="project-categories">Europe, Castle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Gallery Grid -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html.twig' %}
+
+{% endblock %}

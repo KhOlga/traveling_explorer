@@ -1,0 +1,44 @@
+{% block stylesheets %}
+
+
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/animation.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/animation_timers.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-reboot.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/linecons.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/sponsors_twitter.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/team.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/contacts.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/customers_reviews.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/hot_tours.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/our_company.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/modals.css') }}">
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block body %}
+    <div class="col wow fadeInUp delay-06s">
+        {{ form_start(contactsForm) }}
+        {{ form_widget(contactsForm) }}
+
+        <input type="submit"/>
+        {{ form_end(contactsForm) }}
+    </div>
+
+
+
+
+{% endblock %}
+

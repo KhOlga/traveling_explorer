@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*========== MAIN COLOR start ==========*/
+
+    /*color: #d89956;*/
+    /*color: #c15333;*/
+    /*color: #2a3d2b;*/
+    /*color: #30150d;*/
+
+/*========== MAIN COLOR end ==========*/
+
+/*========== GENERAL STYLES start ==========*/
+
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background:#fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color:#888888;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/*.site-content{
+    height: auto !important;
+}*/
+#header_section{
+    height: 158px;
+}
+footer{
+
+}
+
+
+.logo{
+    float:left;
+    width:230px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.color-accent{
+    background: url(../img/poligan_bg.jpg) no-repeat left top;
+    height: 30px;
+    padding: 0;
+    margin-top: 0;
+    filter: alpha(opacity=60);
+}
+
+a, a:hover, a:active{
+    outline:0px !important
+}
+
+ul{
+    list-style:none;
+    margin-bottom: 0;
+}
+
+p{
+    line-height:24px;
+    margin:0;
+}
+
+
+img{
+    max-width:100%;
+}
+
+.fl-lt {float:left;}
+.fl-rt {float:right;}
+
+/*---------- Clear floated element start ----------*/
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.figure{ margin:0px;}
+/*---------- Clear floated element end ----------*/
+
+/*========== GENERAL STYLES start ==========*/
+
+/*========== HEADINGS start ==========*/
+h2{
+    font-size: 40px;
+    color:#222222;
+    font-family: 'Dosis', sans-serif;
+    font-weight:700;
+    padding: 35px 0 35px 0;
+    margin: 0;
+    text-align:center;
+    text-transform:uppercase;
+}
+h3{
+    font-size:35px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color:#222222;
+
+    margin:0 0 5px 0;
+    text-transform:uppercase;
+}
+h4{
+    font-size:30px;
+    font-family: 'Dosis', sans-serif;
+    color:#222222;
+}
+h5{
+    font-size:25px;
+    font-family: 'Lato', sans-serif;
+}
+h6{
+    font-size:20px;
+    color:#888888;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    text-align:center;
+    margin:0 0 60px 0;
+}
+
+/*========== HEADINGS end ==========*/
+
+
+/*========== HEADERS SECTION STYLES start ==========*/
+
+#header_section{
+    background:#ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    position:relative;
+}
+
+.res-nav_click{
+    display:none;
+}
+
+/*========== HEADERS SECTION STYLES end ==========*/
+
+/*========== MENU STYLES start ==========*/
+.nav{
+    float:left;
+}
+
+.nav ul{
+    list-style:none;
+    padding:50px;
+}
+.nav ul.toggle{
+    display:none;
+    visibility:hidden;
+    height:0px;
+    overflow:hidden;
+    margin-bottom: 0;
+}
+
+.nav ul li{
+    display:inline-block;
+    margin:0 23px;
+}
+
+.nav ul li:first-child{
+    /*margin:0px;*/
+}
+
+.nav ul li:last-child{
+    margin:0 0 0 23px;
+}
+
+.nav ul li a{
+    display:block;
+    font-size:18px;
+    color:#222222;
+    font-family: 'Dosis', serif;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight: 600;
+    transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+}
+.nav ul li a:hover{
+    color:#c15333;
+}
+
+/*========== MENU STYLES end ==========*/
+
+/*========== FONT-FACE start ==========*/
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot') format('embedded-opentype'),
+    url('../fonts/lato-regular.woff2') format('woff2'),
+    url('../fonts/lato-regular.woff') format('woff'),
+    url('../fonts/lato-regular.ttf') format('truetype'),
+    url('../fonts/lato-regular.svg#LatoRegular') format('svg');
+}
+@font-face {
+    font-family: 'LatoBoldBold';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot') format('embedded-opentype'),
+    url('../fonts/lato-bold.woff2') format('woff2'),
+    url('../fonts/lato-bold.woff') format('woff'),
+    url('../fonts/lato-bold.ttf') format('truetype'),
+    url('../fonts/lato-bold.svg#LatoBoldBold') format('svg');
+}
+@font-face {
+    font-family: 'DosisBold';
+    src: url('../fonts/dosis-bold.eot');
+    src: url('../fonts/dosis-bold.eot') format('embedded-opentype'),
+    url('../fonts/dosis-bold.woff2') format('woff2'),
+    url('../fonts/dosis-bold.woff') format('woff'),
+    url('../fonts/dosis-bold.ttf') format('truetype'),
+    url('../fonts/dosis-bold.svg#DosisBold') format('svg');
+}
+
+/*========== FONT-FACE end ==========*/
+
+/*========== BUTTON start ==========*/
+
+a.link_button{
+    font-family: 'Dosis', sans-serif;
+    font-size:16px;
+    font-weight: 600;
+    color:#ffffff;
+    width:178px;
+    height:46px;
+    display:block;
+    line-height:46px;
+    border-radius:3px;
+    text-align:center;
+    text-transform:uppercase;
+    transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+a.link_button:hover{
+    background:#222222;
+}
+/*========== BUTTON start ==========*/

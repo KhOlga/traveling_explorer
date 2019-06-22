@@ -1,0 +1,169 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Explorer: Services{% endblock %}
+
+{% block body %}
+   {# #}{# Start color-accent#}{#
+    <div class="color-accent"></div>
+    #}{# End color-accent#}
+
+    {#<!--Service-->#}
+    <section  id="services-section" class="site-content">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="service_area">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="service_block">
+                            <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa-flash"></i></span> </div>
+                            <h3 class="animated fadeInUp wow">Booking hotels and buying tickets</h3>
+                            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+
+                            <a href="#contactUs" data-toggle="modal" class="link_button contact_us animated fadeInDown wow">Contact us</a>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service_block">
+                            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-comments"></i></span> </div>
+                            <h3 class="animated fadeInUp wow">Friendly Support</h3>
+                            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+                            <a href="#getSupport" data-toggle="modal" class="link_button get_support animated fadeInDown wow">Get support</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service_block">
+                            <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa-shield"></i></span> </div>
+                            <h3 class="animated fadeInUp wow">Visas and Insurance</h3>
+                            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+                            <a href="#orderDocument" data-toggle="modal" class="link_button order_document animated fadeInDown wow">Order document</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {#<!--Service-->#}
+
+{# ========== CONTACT US start ========== #}
+
+    <div class="container">
+        <!-- The Modal -->
+        <div class="modal" id="contactUs">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">Modal Heading</h1>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4>Some text to enable scrolling..</h4>
+                        <p>Ex ea commodo consequat.</p>
+                        <div class="col wow fadeInUp delay-03s">
+                            <form action="#" method="post" class="form">
+                                <input class="input-text animated wow flipInY delay-02s" type="text" name="name" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <input class="input-text animated wow flipInY delay-04s" type="email" name="email" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <input class="input-text animated wow flipInY delay-04s" type="text" name="phone" value="Your Phone *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+                                <input class="input-btn animated wow flipInY delay-08s" type="submit" value="contact us">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn modal-button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# ========== CONTACT US end ========== #}
+
+    {# ========== GET SUPPORT start ========== #}
+    <div class="container">
+        <!-- The Modal -->
+        <div class="modal" id="getSupport">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">Modal Heading</h1>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4>Some text to enable scrolling..</h4>
+                        <p>Ex ea commodo consequat.</p>
+                        <div class="col wow fadeInUp delay-03s">
+                            <form action="#" method="post" class="form">
+                                <input class="input-text animated wow flipInY delay-02s" type="text" name="name" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <input class="input-text animated wow flipInY delay-04s" type="email" name="email" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <input class="input-text animated wow flipInY delay-04s" type="text" name="phone" value="Your Phone *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+                                <input class="input-btn animated wow flipInY delay-08s" type="submit" value="get support">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn modal-button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# ========== GET SUPPORT end ========== #}
+
+    {# ========== ORDER DOCUMENT start ========== #}
+    <div class="container">
+        <!-- The Modal -->
+        <div class="modal" id="orderDocument">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">Modal Heading</h1>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4>Some text to enable scrolling..</h4>
+                        <p>Ex ea commodo consequat.</p>
+                        <div class="col wow fadeInUp delay-03s">
+                            <form action="#" method="post" class="form">
+                                <input class="input-text animated wow flipInY delay-02s" type="text" name="name" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <input class="input-text animated wow flipInY delay-04s" type="email" name="email" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <input class="input-text animated wow flipInY delay-04s" type="text" name="phone" value="Your Phone *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                                <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+                                <input class="input-btn animated wow flipInY delay-08s" type="submit" value="order document">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn modal-button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# ========== ORDER DOCUMENT end ========== #}
+
+    {#{% include 'modal/contact_us.html.twig' %}#}
+    {#{% include 'modal/get_support.html.twig' %}#}
+    {#{% include 'modal/order_document.html.twig' %}#}
+
+    {% include 'footer.html.twig' %}
+{% endblock %}

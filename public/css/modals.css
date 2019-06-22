@@ -1,0 +1,17 @@
+.modal-header{
+    background: url(../img/poligan_bg.jpg) no-repeat left top;
+    color: #0c5460 !important;
+}
+
+.modal-body{
+    background: #ececf6;
+    color: #0c5460 !important;
+}
+
+.modal-footer{
+    background: #72c8af;
+}
+
+.modal-button{
+    background: #dd5652;
+}
